@@ -6,14 +6,13 @@ body {
 }
 
 header a img {
-  width: 53.306px;
-  height: 50px;
+  margin: 2rem 0;
   mix-blend-mode: screen;
 }
 
 .hero-section {
   background: #1B0234;
-  height: 233px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -24,7 +23,7 @@ header a img {
 .hero-section h1 {
   color: #FFF;
   text-align: center;
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -36,13 +35,17 @@ header a img {
 .hero-section h2 {
   color: #FFF;
   text-align: center;
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.84px;
   margin: 0 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .programs-section {
@@ -65,7 +68,7 @@ header a img {
 }
 
 .col-md-4 {
-  width: auto;
+  width: 75%;
   height: 225px;
   border-radius: 3px;
   background: #FFF;
@@ -78,11 +81,12 @@ header a img {
 }
 
 .col-4 {
-  width: auto;
+  width: 75%;
   height: 200px;
   border-radius: 3px;
   background: #FFF;
   box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
+  margin-top: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -112,7 +116,7 @@ header a img {
 
 .col-md-4 p {
   color: #1E1524;
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -122,7 +126,7 @@ header a img {
 
 .col-4 p {
   color: #1E1524;
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -158,7 +162,7 @@ header a img {
 
 .more p {
   color: rgba(249, 145, 50, 0.75);
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -179,7 +183,7 @@ header a img {
   background: #392A48;
 
   color: #FFF;
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -204,7 +208,7 @@ footer {
 
 footer p {
   color: #FFF;
-  font-family: Inria Sans;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -219,4 +223,18 @@ footer p {
   margin-top: 2rem;
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  .col-4 {
+    width: auto;
+  }
+
+  .col-md-4 {
+    width: auto;
+  }
+
+  header a img {
+    width: 90%;
+    height: auto;
+    mix-blend-mode: screen;
+  }
+}
