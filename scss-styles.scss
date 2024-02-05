@@ -56,7 +56,6 @@ a {
 
 @mixin flexCenter($direction, $align) {
   display: flex;
-  align-items: align;
   flex-direction: $direction;
   align-items: $align;
   justify-content: center;
@@ -69,10 +68,10 @@ a {
   background: #392A48;
 
   color: #FFF;
-  font-family: Montserrat;
-  font-size: 12px;
+  font-family: Inria Sans;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 18px;
   letter-spacing: 0.72px;
 }
@@ -127,9 +126,8 @@ header {
 }
 
 .programs-section {
-
   background: #F6F6F6;
-  padding: 2rem .5rem;
+  padding: 2rem 0;
 
   h3 {
     @include title-two();
@@ -146,7 +144,7 @@ header {
       box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
       margin: 1rem;
       padding: 1rem .5rem;
-      width: 400px;
+      width: auto;
 
       h4 {
         @include sub-title-two();
@@ -184,8 +182,11 @@ header {
     background: #FFF;
     box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
     margin: 1rem;
-    padding: 1rem .5rem;
+    padding: .5rem;
     width: 400px;
+
+    @include flexCenter(row, center);
+    justify-content: space-between;
 
     h4 {
       @include sub-title-two();
@@ -269,14 +270,20 @@ header {
       box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
       width: 400px;
 
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.72px;
+      }
+
       p.number {
         font-size: 28px;
         font-weight: 700;
         color: #F99132;
       }
-
-      h5 {}
-
     }
   }
 }
@@ -333,6 +340,7 @@ footer {
 
 
 @media only screen and (max-width: 767px) {
+
   header {
     a {
       img {
@@ -410,12 +418,12 @@ footer {
       margin: 2rem 0;
 
       .col-4 {
-        width: 100dvw;
+        width: 99dvw;
       }
     }
 
     .col-md-4 {
-      width: 100dvw;
+      width: 99dvw;
     }
   }
 
@@ -424,7 +432,11 @@ footer {
       @include flexCenter(column, center);
 
       .col-md-4 {
-        width: 100dvw;
+        width: 99dvw;
+
+        // p {
+        //   font-size: 14px;
+        // }
       }
     }
   }
