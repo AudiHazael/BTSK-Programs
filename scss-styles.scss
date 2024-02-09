@@ -63,9 +63,9 @@ a {
 
 @mixin button() {
   @include flexCenter(normal, center);
-  padding: 2px 22px 3px 23px;
+  padding: .5rem 1rem;
   border-radius: 3px;
-  background: #392A48;
+  background: rgb(249, 146, 50);
 
   color: #FFF;
   font-family: Inria Sans;
@@ -76,6 +76,7 @@ a {
   letter-spacing: 0.72px;
 }
 
+// Header
 header {
   background: #1B0234;
 
@@ -103,9 +104,39 @@ header {
   }
 }
 
+// About Us
 .about-us {
   h3 {
     @include title-two();
+  }
+
+  p {}
+
+  .row {
+    @include flexCenter(row, center);
+
+    h3 {
+      @include title-two();
+    }
+
+    .col-4 {
+      border-radius: 3px;
+      background: #FFF;
+      box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
+      margin: 1rem .5rem;
+      padding: 1rem .5rem;
+      width: 400px;
+
+      p {
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.72px;
+      }
+    }
   }
 }
 
@@ -115,16 +146,24 @@ header {
   }
 }
 
+// cta
 .cta {
-  h3 {
-    @include title-two();
+  .row {
+    @include flexCenter(column, center);
+
+    .col-md-10 {
+      h3 {
+        @include title-two();
+      }
+    }
   }
 
   button.btn {
-    @include button;
+    @include button();
   }
 }
 
+// Programs Section
 .programs-section {
   background: #F6F6F6;
   padding: 2rem 0;
@@ -144,7 +183,7 @@ header {
       box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
       margin: 1rem;
       padding: 1rem .5rem;
-      width: auto;
+      width: 400px;
 
       h4 {
         @include sub-title-two();
@@ -185,7 +224,7 @@ header {
     padding: .5rem;
     width: 400px;
 
-    @include flexCenter(row, center);
+    @include flexCenter(column, flex-start);
     justify-content: space-between;
 
     h4 {
@@ -226,7 +265,7 @@ header {
     .more {
       a {
         p {
-          color: rgba(249, 145, 50, 0.75);
+          color: rgba(249, 145, 50, 0.95);
           font-family: Montserrat;
           font-size: 12px;
           font-style: normal;
@@ -244,16 +283,40 @@ header {
   }
 }
 
+// Accreditations
 .accreditations {
-  a {
-    border-radius: 3px;
-    background: #FFF;
-    box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
-    margin: 1rem;
-    padding: 1rem .5rem;
+  .row {
+
+    .col-md-6 {
+      @include flexCenter(row, center);
+
+      h3 {
+        @include title-two();
+      }
+
+      p {
+        font-weight: 300;
+        font-family: Inria Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.72px;
+      }
+
+      a {
+        border-radius: 3px;
+        background: #FFF;
+        box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
+        margin: 1rem;
+        padding: 1rem .5rem;
+      }
+    }
   }
+
 }
 
+// How to Apply
 .how-to-apply {
   background: #F6F6F6;
   padding: 2rem 0;
@@ -272,6 +335,7 @@ header {
 
       p {
         font-weight: 300;
+        font-family: Inria Sans;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -288,6 +352,7 @@ header {
   }
 }
 
+// Qualifications
 .qualifications {
   background: #F6F6F6;
   padding: 2rem 0;
@@ -310,29 +375,128 @@ header {
   }
 }
 
+// Testimonial Section
+.testimonial-section {
+  background: #000;
+
+  .container {
+    .swiper-wrapper {
+      .swiper-slide {
+        @include flexCenter(row, center);
+
+        .row {
+          @include flexCenter(row, center);
+          justify-content: center;
+
+          .col-md-7 {
+            @include flexCenter(column, flex-start);
+            background: #272C33;
+            height: fit-content;
+            position: relative;
+            right: 6rem;
+
+            p {
+              color: rgba(255, 255, 255, 0.75);
+              font-family: Montserrat;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: 0.78px;
+            }
+
+            p.name {
+              color: #FFF;
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+
+              span {
+                color: #939599;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer
 footer {
+  @include flexCenter(row, center);
   padding: 2rem 0 .25rem 0;
   background: #1B0234;
 
-  .socials {
-    @include flexCenter(row, center);
+  .row {
+    .col-md-5 {
+      a.navbar-brand {
+        img {
+          width: 250px;
+          height: auto;
+        }
+      }
 
-    img {
-      margin: 0 2rem;
+      .socials {
+        @include flexCenter(row, flex-start);
+        justify-content: flex-start;
+        font-size: 20px;
+
+        .social-icon {
+          margin: .5rem 0;
+        }
+      }
+
+      p {
+        color: rgba(255, 255, 240, 0.871);
+        font-family: Inria Sans;
+        font-weight: 300;
+        font-size: 14.25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.72px;
+      }
+    }
+  }
+
+  .col-md-7 {
+    p {
+      color: rgba(255, 255, 240, 0.871);
+      font-family: Inria Sans;
+      font-weight: 300;
+      font-size: 14.25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.72px;
+    }
+
+    h5 {
+      @include sub-title-two();
+      color: #f6f6f6
     }
   }
 
   .copyright {
     @include flexCenter(row, center);
-    margin-top: 2rem;
+    margin-top: 4rem;
 
     p {
-      color: #FFF;
+      color: rgba(255, 255, 240, 0.871);
       font-family: Inria Sans;
       font-size: 14px;
       font-style: normal;
       font-weight: 300;
       line-height: normal;
+
+      a {
+        color: lightblue;
+        font-size: 16px;
+        font-weight: 700;
+      }
     }
   }
 }
@@ -340,6 +504,12 @@ footer {
 
 
 @media only screen and (max-width: 767px) {
+
+  h3 {
+    @include title-two();
+    font-size: 20px;
+    font-weight: 700;
+  }
 
   header {
     a {
@@ -453,9 +623,53 @@ footer {
     }
   }
 
-  footer {
-    p {
-      font-size: 10px;
+  // Testimonial Section
+  .testimonial-section {
+    background: #000;
+
+    .container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .row {
+
+            .col-md-3 {
+              img {
+                display: none;
+              }
+            }
+
+            .col-md-7 {
+              position: relative;
+              right: 0;
+              left: 0;
+
+              p {
+                font-size: 12px;
+
+                p.name {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Accreditations
+    .accreditations {
+      .row {
+        .col-md-6.text {
+          display: none;
+        }
+      }
+    }
+
+
+    footer {
+      p {
+        font-size: 10px;
+      }
     }
   }
 }
