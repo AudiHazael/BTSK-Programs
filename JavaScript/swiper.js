@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1, // Display one slide at a time
-    spaceBetween: 1500, // Adjust the spacing between slides
+    spaceBetween: 2000, // Adjust the spacing between slides
     pagination: {
       el: '.swiper-pagination', // Specify the pagination element
       clickable: true, // Allow users to click on pagination dots to navigate
