@@ -468,9 +468,9 @@ footer .copyright p {
   line-height: normal;
 }
 footer .copyright p a {
-  color: lightblue;
-  font-size: 16px;
-  font-weight: 700;
+  color: rgb(196, 236, 249);
+  font-size: 18px;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 767px) {
