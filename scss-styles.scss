@@ -89,6 +89,7 @@ header {
     }
   }
 
+  // Hero
   .hero-section {
     height: auto;
 
@@ -110,13 +111,13 @@ header {
     @include title-two();
   }
 
-  p {}
-
   .row {
     @include flexCenter(row, center);
 
     h3 {
       @include title-two();
+      font-size: 24px;
+      font-weight: 500;
     }
 
     .col-4 {
@@ -140,13 +141,14 @@ header {
   }
 }
 
+// Index Qualification
 .qualifications {
   h3 {
     @include title-two();
   }
 }
 
-// cta
+// CTAs
 .cta {
   .row {
     @include flexCenter(column, center);
@@ -163,7 +165,7 @@ header {
   }
 }
 
-// Programs Section
+// Programs Category, List Qualifications, Requirements and Specialization
 .programs-section {
   background: #F6F6F6;
   padding: 2rem 0;
@@ -316,7 +318,7 @@ header {
 
 }
 
-// How to Apply
+// Application process
 .how-to-apply {
   background: #F6F6F6;
   padding: 2rem 0;
@@ -332,6 +334,15 @@ header {
       background: #FFF;
       box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
       width: 400px;
+
+      h5 {
+        color: #151212;
+        font-family: Inria Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+      }
 
       p {
         font-weight: 300;
@@ -450,10 +461,23 @@ footer {
       }
 
       p {
-        color: rgba(255, 255, 240, 0.871);
+        color: rgba(255, 255, 240, 0.7);
+        font-weight: 100;
         font-family: Inria Sans;
-        font-weight: 300;
-        font-size: 14.25px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.72px;
+      }
+    }
+
+    .col-md-5 {
+      p {
+        color: rgba(255, 255, 240, 0.7);
+        font-weight: 100;
+        font-family: Inria Sans;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 18px;
@@ -501,8 +525,7 @@ footer {
   }
 }
 
-
-
+// Mobile Optimization
 @media only screen and (max-width: 767px) {
 
   h3 {
@@ -511,6 +534,7 @@ footer {
     font-weight: 700;
   }
 
+  // Header
   header {
     a {
       img {
@@ -533,6 +557,7 @@ footer {
     }
   }
 
+  // About Us
   .about-us {
     h3 {
       @include title-two();
@@ -543,8 +568,17 @@ footer {
     p {
       font-size: 14px;
     }
+
+    .row {
+
+      .col-4 {
+        padding: 1rem;
+        width: 90dvw;
+      }
+    }
   }
 
+  // Index Qualifications
   .qualifications {
     h3 {
       @include title-two();
@@ -559,6 +593,8 @@ footer {
     }
   }
 
+
+  // CTAs
   .cta {
     h3 {
       @include title-two();
@@ -575,6 +611,7 @@ footer {
     }
   }
 
+  // Programs Category, List Qualifications, Requirements and Specialization
   .programs-section {
     h3 {
       @include title-two();
@@ -588,29 +625,37 @@ footer {
       margin: 2rem 0;
 
       .col-4 {
-        width: 99dvw;
+        width: 99dvw !important;
       }
     }
 
     .col-md-4 {
-      width: 99dvw;
+      width: 99dvw !important;
     }
   }
 
+  // Application Process
   .how-to-apply {
     .row {
       @include flexCenter(column, center);
 
+      h3 {
+        @include title-two();
+        font-size: 20px;
+        font-weight: 700;
+      }
+
       .col-md-4 {
         width: 99dvw;
 
-        // p {
-        //   font-size: 14px;
-        // }
+        p {
+          font-size: 14px;
+        }
       }
     }
   }
 
+  // Index Qualification
   .qualifications {
     h3 {
       @include title-two();
@@ -626,6 +671,7 @@ footer {
   // Testimonial Section
   .testimonial-section {
     background: #000;
+    text-align: justify;
 
     .container {
       .swiper-wrapper {
@@ -642,6 +688,7 @@ footer {
               position: relative;
               right: 0;
               left: 0;
+              padding: 2rem 1rem !important;
 
               p {
                 font-size: 12px;
@@ -655,21 +702,21 @@ footer {
         }
       }
     }
+  }
 
-    // Accreditations
-    .accreditations {
-      .row {
-        .col-md-6.text {
-          display: none;
-        }
+  // Accreditations
+  .accreditations {
+    .row {
+      .col-md-6.text {
+        display: none;
       }
     }
+  }
 
-
-    footer {
-      p {
-        font-size: 10px;
-      }
+  // Footer
+  footer {
+    p {
+      font-size: 10px;
     }
   }
 }

@@ -60,6 +60,8 @@ header .hero-section h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: 24px;
+  font-weight: 500;
 }
 .about-us .row .col-4 {
   border-radius: 3px;
@@ -300,6 +302,14 @@ header .hero-section h2 {
   box-shadow: 0px 10px 100px 0px rgba(141, 141, 141, 0.5);
   width: 400px;
 }
+.how-to-apply .row .col-md-4 h5 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
 .how-to-apply .row .col-md-4 p {
   font-weight: 300;
   font-family: Inria Sans;
@@ -424,10 +434,20 @@ footer .row .col-md-5 .socials .social-icon {
   margin: 0.5rem 0;
 }
 footer .row .col-md-5 p {
-  color: rgba(255, 255, 240, 0.871);
+  color: rgba(255, 255, 240, 0.7);
+  font-weight: 100;
   font-family: Inria Sans;
-  font-weight: 300;
-  font-size: 14.25px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.72px;
+}
+footer .row .col-md-5 p {
+  color: rgba(255, 255, 240, 0.7);
+  font-weight: 100;
+  font-family: Inria Sans;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -520,6 +540,10 @@ footer .copyright p a {
   .about-us p {
     font-size: 14px;
   }
+  .about-us .row .col-4 {
+    padding: 1rem;
+    width: 90dvw;
+  }
   .qualifications h3 {
     color: #151212;
     font-family: Inria Sans;
@@ -568,10 +592,10 @@ footer .copyright p a {
     margin: 2rem 0;
   }
   .programs-section .row .col-4 {
-    width: 99dvw;
+    width: 99dvw !important;
   }
   .programs-section .col-md-4 {
-    width: 99dvw;
+    width: 99dvw !important;
   }
   .how-to-apply .row {
     display: flex;
@@ -579,8 +603,21 @@ footer .copyright p a {
     align-items: center;
     justify-content: center;
   }
+  .how-to-apply .row h3 {
+    color: #151212;
+    font-family: Inria Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 700;
+  }
   .how-to-apply .row .col-md-4 {
     width: 99dvw;
+  }
+  .how-to-apply .row .col-md-4 p {
+    font-size: 14px;
   }
   .qualifications h3 {
     color: #151212;
@@ -597,6 +634,7 @@ footer .copyright p a {
   }
   .testimonial-section {
     background: #000;
+    text-align: justify;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-3 img {
     display: none;
@@ -605,6 +643,7 @@ footer .copyright p a {
     position: relative;
     right: 0;
     left: 0;
+    padding: 2rem 1rem !important;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p {
     font-size: 12px;
@@ -612,10 +651,10 @@ footer .copyright p a {
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p p.name {
     font-size: 10px;
   }
-  .testimonial-section .accreditations .row .col-md-6.text {
+  .accreditations .row .col-md-6.text {
     display: none;
   }
-  .testimonial-section footer p {
+  footer p {
     font-size: 10px;
   }
 }/*# sourceMappingURL=scss-styles.css.map */
