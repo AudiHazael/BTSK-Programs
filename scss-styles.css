@@ -477,7 +477,7 @@ footer .copyright {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 footer .copyright p {
   color: rgba(255, 255, 240, 0.871);
