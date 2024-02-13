@@ -47,6 +47,24 @@ header .hero-section h2 {
   font-weight: 400;
   line-height: normal;
 }
+.about-us p {
+  text-align: justify;
+}
+.about-us .main-site {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.about-us .main-site p {
+  font-weight: 700;
+}
+.about-us .main-site a {
+  color: #F99132;
+  font-size: 16px;
+  font-weight: 700;
+}
 .about-us .row {
   display: flex;
   flex-direction: row;
@@ -365,6 +383,13 @@ header .hero-section h2 {
 .testimonial-section {
   background: #000;
 }
+.testimonial-section .container .swiper-pagination {
+  position: relative;
+  top: 2rem;
+}
+.testimonial-section .container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #f6f6f6;
+}
 .testimonial-section .container .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: row;
@@ -442,6 +467,11 @@ footer .row .col-md-5 p {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.72px;
+}
+footer .row .col-md-5 .main-site a {
+  color: #F99132;
+  font-size: 14px;
+  font-weight: 500;
 }
 footer .row .col-md-5 p {
   color: rgba(255, 255, 240, 0.7);
@@ -538,6 +568,23 @@ footer .copyright p a {
   }
   .about-us p {
     font-size: 14px;
+  }
+  .about-us .main-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us .main-site p {
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 0.25rem 0;
+    padding: 0;
+  }
+  .about-us .main-site a {
+    color: #F99132;
+    font-size: 16px;
+    font-weight: 700;
   }
   .about-us .row .col-4 {
     padding: 1rem;
@@ -649,6 +696,7 @@ footer .copyright p a {
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p p.name {
     font-size: 10px;
+    opacity: 0;
   }
   .accreditations .row .col-md-6.text {
     display: none;

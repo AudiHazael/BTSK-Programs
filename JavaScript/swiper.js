@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, // Display one slide at a time
-    spaceBetween: 2000, // Adjust the spacing between slides
+    slidesPerView: 1,
+    spaceBetween: 2000,
     pagination: {
-      el: '.swiper-pagination', // Specify the pagination element
-      clickable: true, // Allow users to click on pagination dots to navigate
+      el: '.swiper-pagination',
+      clickable: true,
     },
     autoplay: {
-      delay: 15000, // Automatically advance slides every 15 seconds
-      disableOnInteraction: false, // Continue autoplay even when the user interacts with the slider
+      delay: 15000,
+      disableOnInteraction: false,
     },
-    // Change the effect to 'slide' for a sliding animation
+
     effect: 'slide',
-    // Optional: Customize the sliding animation duration (in milliseconds)
-    speed: 1000, // Set to 1000 milliseconds (1 second) for a slower slide animation
+
+    speed: 1000,
   });
 });
