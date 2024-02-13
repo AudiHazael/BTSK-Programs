@@ -482,15 +482,14 @@ footer .copyright {
 footer .copyright p {
   color: rgba(255, 255, 240, 0.871);
   font-family: Inria Sans;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 footer .copyright p a {
   color: rgb(196, 236, 249);
-  font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 767px) {
