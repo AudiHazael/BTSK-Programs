@@ -412,7 +412,7 @@ header {
   .container {
     .swiper-pagination {
       position: relative;
-      // top: 2rem;
+      top: 2.5rem;
 
       .swiper-pagination-bullet {
         background-color: #f6f6f6;
@@ -431,8 +431,8 @@ header {
             @include flexCenter(column, flex-start);
             background: #272C33;
             height: fit-content;
-            // position: relative;
-            // right: 6rem;
+            position: relative;
+            right: 4rem;
 
             p {
               color: rgba(255, 255, 255, 0.75);
@@ -764,7 +764,7 @@ footer {
 
                 img {
                   width: 75px;
-                  height: 75px;
+                  height: auto;
                   border-radius: 6px;
                 }
               }

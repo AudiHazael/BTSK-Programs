@@ -385,6 +385,7 @@ header .hero-section h2 {
 }
 .testimonial-section .container .swiper-pagination {
   position: relative;
+  top: 2.5rem;
 }
 .testimonial-section .container .swiper-pagination .swiper-pagination-bullet {
   background-color: #f6f6f6;
@@ -410,6 +411,8 @@ header .hero-section h2 {
   background: #272C33;
   height: -moz-fit-content;
   height: fit-content;
+  position: relative;
+  right: 4rem;
 }
 .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p {
   color: rgba(255, 255, 255, 0.75);
@@ -705,7 +708,7 @@ footer .copyright p a {
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details img {
     width: 75px;
-    height: 75px;
+    height: auto;
     border-radius: 6px;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .name {
