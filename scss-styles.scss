@@ -412,7 +412,7 @@ header {
   .container {
     .swiper-pagination {
       position: relative;
-      top: 2rem;
+      // top: 2rem;
 
       .swiper-pagination-bullet {
         background-color: #f6f6f6;
@@ -431,8 +431,8 @@ header {
             @include flexCenter(column, flex-start);
             background: #272C33;
             height: fit-content;
-            position: relative;
-            right: 6rem;
+            // position: relative;
+            // right: 6rem;
 
             p {
               color: rgba(255, 255, 255, 0.75);
@@ -444,18 +444,22 @@ header {
               letter-spacing: 0.78px;
             }
 
-            p.name {
-              color: #FFF;
-              font-family: Montserrat;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
+            .name {
+              p {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
 
-              span {
-                color: #939599;
+                span {
+                  color: #939599;
+                  font-size: 12px;
+                }
               }
             }
+
           }
         }
       }
@@ -752,6 +756,23 @@ footer {
                   opacity: 0;
                 }
               }
+
+              .details {
+                display: block !important;
+
+                @include flexCenter(row, flex-start);
+
+                img {
+                  width: 75px;
+                  height: 75px;
+                  border-radius: 6px;
+                }
+              }
+
+              .name {
+                display: none !important;
+              }
+
             }
           }
         }
@@ -770,8 +791,10 @@ footer {
 
   // Footer
   footer {
-    p {
-      font-size: 10px;
+    .copyright {
+      p {
+        font-size: 12px;
+      }
     }
   }
 }
