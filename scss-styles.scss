@@ -116,8 +116,7 @@ header {
   }
 
   .main-site {
-    @include flexCenter(row, flex-start);
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     p {
       font-weight: 700;
@@ -766,6 +765,20 @@ footer {
                   width: 75px;
                   height: auto;
                   border-radius: 6px;
+                }
+
+                p {
+                  color: #FFF;
+                  font-family: Montserrat;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+
+                  span {
+                    color: #939599;
+                    font-size: 12px;
+                  }
                 }
               }
 

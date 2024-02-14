@@ -51,11 +51,7 @@ header .hero-section h2 {
   text-align: justify;
 }
 .about-us .main-site {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .about-us .main-site p {
   font-weight: 700;
@@ -710,6 +706,18 @@ footer .copyright p a {
     width: 75px;
     height: auto;
     border-radius: 6px;
+  }
+  .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details p span {
+    color: #939599;
+    font-size: 12px;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .name {
     display: none !important;
