@@ -408,7 +408,7 @@ header .hero-section h2 {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  right: 4rem;
+  right: 2rem;
 }
 .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p {
   color: rgba(255, 255, 255, 0.85);
@@ -698,7 +698,7 @@ footer .copyright p a {
     font-size: 12px;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p p.name {
-    font-size: 10px;
+    font-size: 8px;
     opacity: 0;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details {
