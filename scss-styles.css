@@ -407,8 +407,6 @@ header .hero-section h2 {
   background: #272C33;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
-  right: 2rem;
 }
 .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p {
   color: rgba(255, 255, 255, 0.85);

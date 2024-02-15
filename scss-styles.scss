@@ -430,8 +430,8 @@ header {
             @include flexCenter(column, flex-start);
             background: #272C33;
             height: fit-content;
-            position: relative;
-            right: 2rem;
+            // position: relative;
+            // right: 2rem;
 
             p {
               color: rgba(255, 255, 255, 0.85);
