@@ -234,7 +234,7 @@ header .hero-section h2 {
 .programs-section .col-md-4 .items p {
   color: #000;
   font-family: Inria Sans;
-  font-size: 10px;
+  font-size: 9px;
   font-style: normal;
   font-weight: 700;
   line-height: 14px;
@@ -411,11 +411,11 @@ header .hero-section h2 {
   right: 4rem;
 }
 .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: Montserrat;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Inria Sans;
   font-size: 13px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 18px;
   letter-spacing: 0.78px;
 }
@@ -637,8 +637,14 @@ footer .copyright p a {
   .programs-section .row .col-4 {
     width: 99dvw !important;
   }
+  .programs-section .row .col-4 p {
+    font-size: 12px;
+  }
   .programs-section .col-md-4 {
     width: 99dvw !important;
+  }
+  .programs-section .col-md-4 p {
+    font-size: 12px;
   }
   .how-to-apply .row {
     display: flex;
@@ -686,7 +692,7 @@ footer .copyright p a {
     position: relative;
     right: 0;
     left: 0;
-    padding: 2rem 1rem !important;
+    padding: 2rem 0.5rem !important;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 p {
     font-size: 12px;
@@ -696,16 +702,12 @@ footer .copyright p a {
     opacity: 0;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details {
-    display: block !important;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    display: flex !important;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details img {
     width: 75px;
     height: auto;
-    border-radius: 6px;
+    border-radius: 4px;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details p {
     color: #FFF;
@@ -714,9 +716,11 @@ footer .copyright p a {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    position: relative;
+    top: 2.75rem;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .details p span {
-    color: #939599;
+    color: rgba(255, 255, 255, 0.7843137255);
     font-size: 12px;
   }
   .testimonial-section .container .swiper-wrapper .swiper-slide .row .col-md-7 .name {

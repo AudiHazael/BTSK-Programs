@@ -274,7 +274,7 @@ header {
       p {
         color: #000;
         font-family: Inria Sans;
-        font-size: 10px;
+        font-size: 9px;
         font-style: normal;
         font-weight: 700;
         line-height: 14px;
@@ -434,11 +434,11 @@ header {
             right: 4rem;
 
             p {
-              color: rgba(255, 255, 255, 0.75);
-              font-family: Montserrat;
+              color: rgba(255, 255, 255, 0.85);
+              font-family: Inria Sans;
               font-size: 13px;
               font-style: normal;
-              font-weight: 400;
+              font-weight: 300;
               line-height: 18px;
               letter-spacing: 0.78px;
             }
@@ -682,11 +682,19 @@ footer {
       margin: 2rem 0;
 
       .col-4 {
+        p {
+          font-size: 12px;
+        }
+
         width: 99dvw !important;
       }
     }
 
     .col-md-4 {
+      p {
+        font-size: 12px;
+      }
+
       width: 99dvw !important;
     }
   }
@@ -745,7 +753,7 @@ footer {
               position: relative;
               right: 0;
               left: 0;
-              padding: 2rem 1rem !important;
+              padding: 2rem .5rem !important;
 
               p {
                 font-size: 12px;
@@ -757,14 +765,12 @@ footer {
               }
 
               .details {
-                display: block !important;
-
-                @include flexCenter(row, flex-start);
+                display: flex !important;
 
                 img {
                   width: 75px;
                   height: auto;
-                  border-radius: 6px;
+                  border-radius: 4px;
                 }
 
                 p {
@@ -775,8 +781,11 @@ footer {
                   font-weight: 500;
                   line-height: normal;
 
+                  position: relative;
+                  top: 2.75rem;
+
                   span {
-                    color: #939599;
+                    color: #ffffffc8;
                     font-size: 12px;
                   }
                 }
